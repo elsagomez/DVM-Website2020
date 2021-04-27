@@ -533,8 +533,7 @@
             <div class="content">
               <h3><strong>Our Process</strong></h3>
               <p>
-                Clients who have been with us will tell you that we have a service-focused on quality. DVM Industries’
-                management structure is based upon the following core principles:
+                Our approach on energy solutions in simple steps: 
               </p>
             </div>
 
@@ -812,7 +811,7 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <!-- <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -905,7 +904,7 @@
         </div>
 
       </div>
-    </section> 
+    </section>  -->
     <!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
@@ -1072,30 +1071,39 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action='https://forms.zohopublic.com/dvmind/form/ContactUsWebsite/formperma/XaXpdKgGY0ZVALf7Aeayf-dLVK4H7Tx3VXxWQFq_KPI/htmlRecords/submit' name='form' id='form' class='php-email-form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+              <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+              <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+              <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="Name_First" class="form-control" id="name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" fieldType=7/>
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email"
-                    data-msg="Please enter a valid email" />
+                  <label for="name">Your Last Name</label>
+                  <input type="text" class="form-control" name="Name_Last" id="lastname"  data-rule="minlen:4"
+                    data-msg="Please enter a valid email" fieldType=7 />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
+                <label for="name">Your Phone Number</label>
+                <input type="text" class="form-control" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode"
                   data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="Email" id="email" data-rule="email" 
+                  data-msg="Please enter at least 8 chars of subject" fieldType=9/>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required"
+                <textarea class="form-control" name="MultiLine" maxlength="65535" rows="10" data-rule="required"
                   data-msg="Please write something for us"></textarea>
                 <div class="validate"></div>
               </div>
